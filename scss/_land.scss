@@ -1,0 +1,306 @@
+body {
+  overflow: hidden;
+  min-width: 18.75rem;
+  // max-height: $page-height;
+  max-width: 100vw;
+  margin-inline: auto; 
+}
+
+section {
+  outline: $tool;
+  width: $page-width; 
+  height: $page-height; 
+  margin-inline: auto; 
+  position: relative;
+
+  /* layout controls*/
+
+  h1, aside, .p__summ,
+  article {
+    padding-left: 38%;
+  }
+
+  h1 {
+    height: 10%; 
+    border-bottom: 1px solid silver;
+    display: flex;
+    align-items: center;
+    font-family: $font__first;
+    // font-family: $font__second;
+    font-size: 38px;
+    background: $uranian-blue;
+    text-transform: uppercase;
+  }
+
+  aside {
+    position: absolute;
+    top: 0; 
+    left: 30px; 
+    padding-left: 0;
+    height: $page-height; 
+    width: 250px; 
+    background: hsl(0, 0%, 30%);
+    color: white; 
+    font-family: $font__first; 
+    display: grid;
+    grid-template-rows: 220px 200px auto;
+    grid-template-columns: 230px;
+    // border-right: $tool;
+    justify-content: center;
+    gap: 10px; 
+    padding-top: 15px;
+    padding: 10px; 
+
+    
+    .img__container {
+      // margin-left: 6px;
+      align-self: center;
+      justify-self: center;
+      margin-right: 2.5px;
+      width: 160px; 
+      height: 160px; 
+      border-radius: 50%;
+      box-shadow: 0 0 5px 5px $uranian-blue;;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .contact {
+      display: flex; 
+      flex-direction: column;
+      gap: 10px;
+      border-bottom: 1px solid white; ;
+
+      .name__pro {
+        span {
+          font-size: 23px;
+        }
+      }
+
+      .birth {
+        span {
+          margin-bottom: 2px; 
+        }
+      }
+      
+      .citizen {
+        padding-top: 3px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // outline: $tool;
+        font-family: $font__second;
+        font-size: 16px;
+  
+        span {
+          font-size: 19px;
+          margin-right: auto; 
+          text-align: left;
+          width: max-content;
+          // outline: 1px solid pink;
+
+        }
+    }
+    .address {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      position: relative;
+
+      .address__line__one {
+        width: 100%;
+        display: flex;
+        // outline: 1px solid green;
+ 
+
+        .material-symbols-outlined {
+          // outline: $tool;
+          margin-top: 4.5%;
+          display: inline-block;
+          margin-right: auto !important;
+          width: fit-content;
+          position: absolute;
+        }
+
+        .add__1 {
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+
+      .add__2 {
+        margin-right: 0;
+        margin-left: auto;
+      }
+
+
+      span {
+        font-size: 16px;
+        display: inline-block;
+      }
+    }
+
+    }
+
+    .education {
+      // outline: $tool; 
+      display: flex; 
+      flex-direction: column;
+      gap: 15px; 
+      font-family: $font__second;
+      font-size: 14px;
+
+      h2 {
+        color: white; 
+        padding-bottom: 5px;
+        font-size: 18px; 
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .online {
+        h3 {
+          margin-bottom: 15px;
+          text-align: left;
+        }
+
+        padding-bottom: 15px;
+        border-bottom: 1px solid white;
+      }
+
+      .high__school {
+        li {
+          font-family: $font__second;
+          font-size: 14px;
+        }
+      }
+
+      .uni {
+        li {
+          span {
+            font-size: 12px;
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .core__content {
+    // background: red;
+    margin-left: 35%;
+    font-family: $font__first;
+    padding: 15px; 
+
+    // this below skips over p__summ
+    h2 {
+      font-size: 20px; 
+      font-weight: bold;
+    }
+
+    .p__summ {
+      padding-left: 15px;
+      line-height: 1.4;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid black;
+
+      // h2 {
+      //   font-size: 20px; 
+      //   font-weight: bold;
+      // }
+
+      p {
+        font-family: $font__second;
+      }
+    }
+
+    .skills {
+
+      h2 {
+        padding-top: 15px;
+      }
+      // outline: 1px solid green;
+      padding-left: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+
+      .list__container {
+        display: flex;
+        font-family: $font__second;
+        width: 100%;
+        gap: 10px;
+        border-bottom: $tool;
+        padding-bottom: 15px;
+        // outline: $tool__Large; 
+
+        >* {
+          flex-grow: 1;
+          // color: red; 
+          list-style-type: circle;
+          line-height: 1.4
+          
+          ;
+        }
+
+        // .rigth__list {
+        //   text-align: right;
+        // }
+      }
+    }
+
+    .work__his {
+      padding-left: $pad__Left;
+      padding-top: 15px; 
+      padding-bottom: 15px;
+      border-bottom: $tool;
+      // outline: $tool; 
+
+      display: flex;
+      gap: 10px; 
+      flex-direction: column;
+      font-family: $font__second;
+
+      ul {
+        list-style-type: circle;
+        margin-top: 10px;
+
+        line-height: 1.4;
+      }
+    }
+
+    .hobbies {
+      font-family: $font__second;
+      padding-left: $pad__Left;
+      padding-top: 15px;
+      // border-bottom: $tool;
+
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      .end {
+        // outline: 5px solid pink; 
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        list-style-type: circle;
+
+        li {
+          text-decoration: underline;
+        }
+      }
+    }
+
+
+  }
+}
